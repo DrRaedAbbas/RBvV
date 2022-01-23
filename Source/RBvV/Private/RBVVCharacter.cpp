@@ -32,12 +32,19 @@ void ARBVVCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 
 }
 
+void ARBVVCharacter::FellOutOfWorld(const UDamageType& dmgType)
+{
+	OnFallingFromHigh();
+}
+
 void ARBVVCharacter::GetActorEyesViewPoint(FVector& OutLocation, FRotator& OutRotation) const
 {
-	if (EyeSocketName.IsNone()) Super::GetActorEyesViewPoint(OutLocation, OutRotation);
 	if (!EyeSocketName.IsNone())
 	{
 		OutLocation = GetMesh()->GetSocketLocation(EyeSocketName);
 		OutRotation = GetMesh()->GetSocketRotation(EyeSocketName);
+		return;
 	}
+
+	Super::GetActorEyesViewPoint(OutLocation, OutRotation);
 }

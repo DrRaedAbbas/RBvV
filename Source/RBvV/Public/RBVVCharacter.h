@@ -27,6 +27,10 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	virtual void FellOutOfWorld(const UDamageType& dmgType) override;
+	UFUNCTION(BlueprintImplementableEvent)
+	void OnFallingFromHigh();
+	
 	virtual void GetActorEyesViewPoint(FVector& OutLocation, FRotator& OutRotation) const override;
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category="RBVV")
