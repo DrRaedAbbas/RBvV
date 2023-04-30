@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "{EA834C90-45CC-77CA-215C-B4B8B9A27D55}",
+	"EngineAssociation": "{57707520-4F0A-3AE7-B745-4AB355029F11}",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -143,16 +143,6 @@
 			"Name": "AdvancedFadeObjects",
 			"Enabled": true,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/5797fa36906648ba8ffdeb6ee94c903e"
-		},
-		{
-			"Name": "AsyncLoadingScreen",
-			"Enabled": true,
-			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/01f39767dc6b4290877f38365787cbf8"
-		},
-		{
-			"Name": "SmoothSyncPlugin",
-			"Enabled": true,
-			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/c8f61b007fb44f4abcb7b0974cebff6b"
 		}
 	]
 }
